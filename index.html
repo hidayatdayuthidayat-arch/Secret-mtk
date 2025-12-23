@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kuis Matematika Penjumlahan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .soal {
+            margin-bottom: 15px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #hasil {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Kuis Penjumlahan</h2>
+
+    <div class="soal">
+        1. 5 + 3 =
+        <input type="number" id="q1">
+    </div>
+
+    <div class="soal">
+        2. 10 + 7 =
+        <input type="number" id="q2">
+    </div>
+
+    <div class="soal">
+        3. 8 + 6 =
+        <input type="number" id="q3">
+    </div>
+
+    <div class="soal">
+        4. 12 + 4 =
+        <input type="number" id="q4">
+    </div>
+
+    <div class="soal">
+        5. 9 + 9 =
+        <input type="number" id="q5">
+    </div>
+
+    <button onclick="hitungNilai()">Submit Jawaban</button>
+
+    <div id="hasil"></div>
+</div>
+
+<script>
+function hitungNilai() {
+    let nilai = 0;
+
+    if (document.getElementById("q1").value == 8) nilai += 20;
+    if (document.getElementById("q2").value == 17) nilai += 20;
+    if (document.getElementById("q3").value == 14) nilai += 20;
+    if (document.getElementById("q4").value == 16) nilai += 20;
+    if (document.getElementById("q5").value == 18) nilai += 20;
+
+    document.getElementById
